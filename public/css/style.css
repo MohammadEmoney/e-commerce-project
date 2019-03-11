@@ -1,0 +1,51 @@
+#plus{
+    margin-top: 1em;
+}
+
+/*SearchBox CSS*/
+
+.search{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
+    border-radius: 4px;
+    transition: .5s;
+    overflow: hidden;
+    box-sizing: inherit;
+    border: none;
+}
+
+.search.active{
+    border: none;
+    width: 400px;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 4px;
+    background: #fff;
+    position: relative;
+    top: -34px;
+}
+.icon #search{
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+    line-height: 40px;
+}
+
+.search.active .icon{
+    background: #ff355a;
+}
+.active #search{
+    display: inline-block;
+    text-align:center;
+    line-height: 40px;
+}
+.search input{
+    text-align: left;
+}
